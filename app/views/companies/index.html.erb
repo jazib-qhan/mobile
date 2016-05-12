@@ -1,0 +1,29 @@
+<table border="1" bgcolor="white" bordercolor="green" width="500" height="100" p align="left">
+
+  <th align="left">Id<p align="center">&emsp;&emsp; &emsp;</th>
+  <th align="left">companies<p align="center">&emsp;</th>
+
+  <th align="left">created at<p align="center">&emsp;</th>
+
+  <th align="left">updated at<p align="center">&emsp;</th>
+
+
+
+
+
+   <%@company.each do|companies| %>
+
+
+      <tr>
+   <td colspan="1" bgcolor=""> <%=companies.id%>  </td>
+        <td colspan="1" bgcolor=""> <%=companies.companies%>  </td>
+
+        <td colspan="1" bgcolor=""> <%=companies.created_at%>  </td>
+        <td colspan="1" bgcolor=""> <%=companies.updated_at%>  </td>
+
+
+   </tr>
+         <%end%>
+
+
+    </table>
